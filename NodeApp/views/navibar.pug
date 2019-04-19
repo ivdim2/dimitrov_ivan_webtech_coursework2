@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+    
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css')
+  body
+    nav.navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='/') M.E.D.M.S  
+        ul.nav.navbar-nav  
+          if user
+           li
+             a(href='/rmessages') Recieved Messages
+           li
+             a(href='/messages/send') Send Message
+        ul.nav.navbar-nav.navbar-right
+          if user    
+                    
+            li
+              a(href='/logout') 
+                span.glyphicon.glyphicon-log-out
+                | Log Out
+          else
+            li
+              a(href='/signup')
+                span.glyphicon.glyphicon-user
+                |  Sign Up
+            li
+              a(href='/login')
+                span.glyphicon.glyphicon-log-in
+                |  Login
+    .container
+    != messages('alert', locals)
+    if errors
+      each error, i in errors
+        div(class="alert alert-danger") #{error.msg}
+    block content
+    br
+    p Copyright &copy; 2019
+        
+        

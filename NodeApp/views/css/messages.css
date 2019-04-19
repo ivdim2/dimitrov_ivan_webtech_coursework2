@@ -1,0 +1,32 @@
+
+.list-group {
+	width: 600px;
+  margin: 10px auto 10px;
+  display: block;
+  background: #DCDCDC;
+  border-radius: 25px;
+}
+
+.convertimage {
+	margin-top: 10px;
+	width: 10%;
+  height: 10%;
+	background:transparent;
+	vertical-align: middle;
+}
+
+.form-control {
+ width: 600px;
+ margin: 10px auto 0;
+ display: block;
+ background: #DCDCDC;
+ padding: 10px 30px 50px;
+ border-radius: 25px;
+
+}
+
+body {
+  background-image: url("/images/cool-background.png");
+	text-align: center;
+
+}

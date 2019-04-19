@@ -1,0 +1,18 @@
+extends navibar
+
+block content
+  link(rel='stylesheet', href='/css/messages.css')
+  script(type='text/javascript',src='../js/baconian.js')
+  script(type='text/javascript',src='../js/rot13.js')
+  h1 Send Message to 
+  br
+  form(method='POST', action='/messages/send/')
+    #form-group
+      label.text Send Message To:
+      input.form-control(name='MessageTittle', type='text')
+    #form-group
+      label.text Message:
+      input.form-control(name='Message' id='MessageBox') 
+      input.convertimage(type='image',src='/images/ROT13.png', onclick="rot13sc()")    
+      input.convertimage(type='image',src='/images/bacon.png', onclick="bacon123()")    
+    

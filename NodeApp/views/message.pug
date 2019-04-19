@@ -1,0 +1,11 @@
+extends navibar
+
+block content
+  link(rel='stylesheet', type='text/css', href='/css/messages.css')
+  h1= article.MessageTittle
+  h5 Written by #{article.MessageFrom}
+  p  #{article.Message}
+  hr
+  a.btn.btn-danger.delete-article(href="/message/delete/"+article._id)= 'Delete '+ article.MessageTittle
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+  script(type='text/javascript',src='/js/del.js')

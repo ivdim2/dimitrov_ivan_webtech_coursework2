@@ -1,0 +1,29 @@
+
+body {
+  background-image: url("/images/cool-background.png");
+  
+}
+
+
+h1,h5 {
+	color:white;
+	font-size: 30px;
+  text-align: center;
+}
+.convertimage {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+  width: 10%;
+  height: 10%
+}
+.textarea {
+  border-color: dodgerblue;
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+  width: 50%;
+  height: 50px;
+  border-radius:20px;

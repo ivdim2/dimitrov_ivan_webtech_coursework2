@@ -1,0 +1,15 @@
+extends navibar
+
+block content
+  link(rel='stylesheet', type='text/css', href='/css/login.css')
+  h1 Login
+  h1.text 
+  form(method='POST', action='/login')
+    #form-group
+      label.text Username:
+      input.form-control(name='username', type='text')
+    #form-group
+      label.text Password:
+      input.form-control(name='password' type='password')
+    .submitbutton
+      input(type='image', src='/images/signup.png', border='0', alt='Submit')

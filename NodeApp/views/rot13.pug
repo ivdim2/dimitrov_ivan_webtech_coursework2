@@ -1,0 +1,14 @@
+extends navibar
+
+block content
+    
+    link(rel='stylesheet', type='text/css', href='/css/rot13.css')
+    script(src='/js/rot13page.js')
+    title ROT13 DECODER & ENCODER
+    h1 ROT13 Encoder & Decoder
+    h5 You can use this field to encode and decode the messages.
+    h5 Plain Text/Cipher Text
+    input#inputbox.textarea(type='text')
+    img.convertimage(src='/images/ROT13.png', onclick='rot13()')
+    h5 Cipher Text/Plain Text
+    textarea#outputpbox.textarea(readonly='readonly')

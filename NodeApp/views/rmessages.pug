@@ -1,0 +1,12 @@
+extends navibar
+
+block content 
+  link(rel='stylesheet', type='text/css', href='/css/layout.css')
+    
+  h1 #{title}
+  ul.list-group
+    each article, i in articles
+      if user.username == article.MessageTittle
+        ul.list-group-item
+          a(href="/message/"+article._id)= article.MessageTittle
+      

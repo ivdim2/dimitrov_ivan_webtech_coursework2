@@ -1,0 +1,21 @@
+extends navibar
+block content
+  link(rel='stylesheet', type='text/css', href='/css/rot13.css')
+  script(src='/js/baconianpage.js')  
+  h1.tittletext Baconian Encoder
+  img.convertimage(src='./images/bacon.png', onclick='bacon()')
+  h5 Plain Text
+  input#inputboxencode.textarea(type='text')
+  h5 Cipher Text
+  textarea#outputpboxencode.textarea(readonly='readonly')
+  br
+  br
+  br
+  h1.tittletext Baconian Decoder 
+  img.convertimage(src='./images/bacon.png', onclick='decodebacon()')
+  h5 Cipher Text
+  input#inputboxdecode.textarea(type='text')
+  h5 Plain Text
+  textarea#outputboxdecode.textarea(readonly='readonly')
+
+    
